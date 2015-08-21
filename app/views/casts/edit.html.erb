@@ -1,0 +1,10 @@
+<h1>Editing Cast</h1>
+
+<%= form_for @cast, method: :patch, :html => { :multipart => true } do |form| %>
+  <%= form.label :avatar %>
+  <%= form.file_field :avatar %>
+  <%= form.submit %>
+<% end %>
+
+<%= link_to 'Show', @cast %> |
+<%= link_to 'Back', casts_path %>

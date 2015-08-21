@@ -1,0 +1,7 @@
+<h1>Users#edit</h1>
+
+<%= form_for current_user, :url => users_update_profile_path, method: :post, :html => { :multipart => true } do |form| %>
+  <%= form.label :avatar %>
+  <%= form.file_field :avatar %>
+  <%= form.submit %>
+<% end %>
